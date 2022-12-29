@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.primary-bg{
+    background-color:#F9FBFD;
+}
+
+.container{
+    width:800px;
+    @apply mx-auto;
+}
+
+.primary-color{
+    color:#483D57;
+}
