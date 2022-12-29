@@ -21,12 +21,12 @@
                 </select>
               </div>
             </div>
-           <div  class="flex mt-6 flex-wrap ">
-             <div v-if="ayahs.hasOwnProperty('arbicText')">
+           <div  class="flex mt-6 flex-wrap w-full">
+             <div class="w-full" v-if="ayahs.hasOwnProperty('arbicText')">
                <p class="primary-color text-xl py-4 leading-10"> <span class="border-rose-900 border-2 text-indigo-900 w-6 h-6 inline-block text-center border rounded-full mx-2 text-sm">{{ayahs.numberInSurah}} </span>{{ayahs.arbicText}}</p>
                <p class="primary-color text-xl py-4 leading-10">=> {{ayahs.banglaText}}</p>
                <p class="primary-color text-xl py-4 leading-10">=> {{ayahs.enlishText}}</p>
-               <div>
+               <div class="w-[400px] mx-auto">
                  <audio-player
                      ref="audioPlayer"
                      :audio-list="audios"
